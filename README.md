@@ -12,31 +12,31 @@ AI-powered system for analyzing urban infrastructure complaints using Gemini API
 ### 1. Setup Environment
 
 
-# Create conda environment
+Create conda environment
 conda create -n gemini-fastapi python=3.9 -y
 conda activate gemini-fastapi
 
-# Install dependencies
+Install dependencies
 pip install -r requirements.txt
 
-# Create .env file according to .penv file
+Create .env file according to .penv file
 
 ### 2. Run FastAPI Server
 
 
-# Start the API server
+ Start the API server
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 ### 3. Run Gradio Interface (New Terminal)
 
 
-# Make sure to activate the same environment
+Make sure to activate the same environment
 conda activate gemini-fastapi
 
-# Install Gradio if not already installed
+Install Gradio if not already installed
 pip install gradio
 
-# Start Gradio interface
+Start Gradio interface
 python gradio_interface.py
 
 
